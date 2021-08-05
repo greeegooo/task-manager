@@ -4,7 +4,7 @@ import { TasksModule } from './tasks/tasks.module';
 
 @Module({
   imports: [
-    TasksModule, 
+    TasksModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
@@ -13,8 +13,9 @@ import { TasksModule } from './tasks/tasks.module';
       password: 'admin',
       database: 'task-manager',
       autoLoadEntities: true,
-      synchronize: true
-    })],
+      synchronize: true,
+    }),
+  ],
   controllers: [],
   providers: [],
 })
