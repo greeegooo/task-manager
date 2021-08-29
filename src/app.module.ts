@@ -16,7 +16,7 @@ import { AuthModule } from './auth/auth.module';
       synchronize: true,
     }),
     TasksModule,
-    AuthModule
+    AuthModule,
   ],
   controllers: [],
   providers: [],
